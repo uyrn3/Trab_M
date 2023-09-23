@@ -1,0 +1,13 @@
+nav {
+    height: 50vh;
+    border: 1px solid red;
+}
+
+a {
+    font-size: 40px;
+}
+
+section {
+    height: 48vh;
+    border: 1px solid red;
+}

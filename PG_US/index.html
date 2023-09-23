@@ -3,26 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../imagens/bandeira-estados-unidos.webp">
+    <title>Estados Unidos</title>
 </head>
 <body>
-    <section>
-        <a href="../PG_I/index.html">Inicio</a>
-    </section>
-    <section>
-        <h1>Estados Unidos</h1>
+    <div id="cabecalho">
+        <div id="dropdown">
+            <nav class="dropdown-menu">
+                <ul>
+                    <li><a href="#">Inicio</a>
+                    <ul id="submenu">
+                        <li><a href="#">Estados Unidos</a></li>
+                        <li><a href="#">União Soviética</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <h1>Guerra Fria</h1>
+    </div>
+    <div id="sumario">
+        <span>Sumario</span>
+        <ul>
+            <li>O que é capitalismo</li>
+            <li>Papel dos estados unidos</li>
+            <li>Principais planos</li>
+            <li>Lideres americanos</li>
+            <li>Acensão Americana</li>
+        </ul>
+    </div>
+    <section id="primeira-section" class="conteudo">
+        <h2>Estados Unidos</h2>
         <h2>Oque é o capitalismo?</h2>
 
         <p>O capitalismo é um sistema econômico e social caracterizado por propriedade privada dos meios de produção, como empresas e fábricas, competição de mercado, busca de lucro e economia de mercado. Nele, os indivíduos e empresas buscam seus interesses próprios, e os preços dos bens e serviços são determinados pela oferta e demanda. O capitalismo tem sido o sistema econômico predominante em muitas partes do mundo, incentivando a inovação, o crescimento econômico e a acumulação de riqueza, mas também levanta questões sobre desigualdade e distribuição de recursos.</p>
     </section>
 
-    <section>
+    <section id="segunda-section" class="conteudo">
         <h2>Papel do Estados Unidos</h2>
 
         <p>Os Estados Unidos adotaram uma política de contenção, que tinha como objetivo conter a expansão do comunismo e da influência soviética pelo mundo. Essa política incluiu a ajuda econômica e militar a nações aliadas e a oposição a movimentos comunistas em todo o mundo.</p>
     </section>
 
-    <section>
+    <section id="terceira-section" class="conteudo">
         <h2>Principais planos</h2>
 
         <ul>
@@ -35,7 +59,7 @@
         </ul>
     </section>
 
-    <section>
+    <section id="quarta-section" class="conteudo">
         <h2>Lideres Americanos</h2>
 
         <ol>
@@ -51,7 +75,7 @@
         </ol>
     </section>
     
-    <section>
+    <section id="quinta-section" class="conteudo">
         <h2>Acensão Americana:</h2>
 
         <ol>
@@ -63,5 +87,32 @@
             <li>Democracia e estabilidade política: A estabilidade política e a continuidade do sistema democrático dos Estados Unidos proporcionaram um ambiente previsível para os negócios e investimentos, o que atraiu capital e fomentou o crescimento econômico.</li>
         </ol>
     </section>
+    <hr>
+    <div id="formulario">
+        <h2>Faca seul cadastro!</h2>
+        <form action="">
+            <label for="name">Nome de usuario:</label>
+            <input type="text" id="name" placeholder="Nome:">
+            <div id="email">
+                <label for="email">Informe o email</label>
+                <input type="email" id="email" placeholder="email">
+            </div>
+            <div id="senha">
+                <label for="senha">Crie uma senha</label>
+                <input type="password" id="senha" placeholder="Senha:">
+            </div>
+            <div id="radio">
+                <span>Deseja receber novidades por email?</span>
+                <input type="radio" name="sim" id="sim" value="escolha">
+                <label for="sim">Sim</label>
+
+                <input type="radio" name="nao" id="nao" value="escolha">
+                <label for="nao">Nao</label>
+            </div>
+            <div id="botao">
+                <button id="enviar" value="send">Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>

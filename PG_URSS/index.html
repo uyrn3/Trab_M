@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="../imagens/png-transparent-soviet-union-hammer-and-sickle-network-symbol-angle-text-wikimedia-commons.png">
     <title>URSS</title>
 </head>
 <body>
     <nav>
         <a href="../PG_I/index.html">Inicio</a>
+        <h1>Guerra Fria</h1>
     </nav>
 
     <section>
@@ -62,5 +65,32 @@
             <li>Dissolução da URSS: Em 25 de dezembro de 1991, Gorbachev renunciou ao cargo de presidente da União Soviética e a URSS foi formalmente dissolvida. O que restou da União Soviética foi substituído pela Comunidade dos Estados Independentes (CEI), uma organização que incluía muitas das antigas repúblicas soviéticas como estados independentes.</li>
         </ol>
     </section>
+    <hr>
+    <div id="formulario">
+        <h2>Faca seul cadastro!</h2>
+        <form action="">
+            <label for="name">Nome de usuario:</label>
+            <input type="text" id="name" placeholder="Nome:">
+            <div id="email">
+                <label for="email">Informe o email</label>
+                <input type="email" id="email" placeholder="email">
+            </div>
+            <div id="senha">
+                <label for="senha">Crie uma senha</label>
+                <input type="password" id="senha" placeholder="Senha:">
+            </div>
+            <div id="radio">
+                <span>Deseja receber novidades por email?</span>
+                <input type="radio" name="sim" id="sim" value="escolha">
+                <label for="sim">Sim</label>
+
+                <input type="radio" name="nao" id="nao" value="escolha">
+                <label for="nao">Nao</label>
+            </div>
+            <div id="botao">
+                <button id="enviar" value="send">Enviar</button>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
