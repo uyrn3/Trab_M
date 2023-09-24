@@ -2,15 +2,41 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
 #cabecalho {
     width: 100vw;
     height: 8rem;
-    background: lightblue;
+    background: #90E0EF;
     position: fixed;
     top: 0;
+    display: flex;
 }
 
-.dropdown-menu ul, .dropdown-menu li {
+h1 {
+    margin: 0 auto;
+    align-self: center;
+}
+
+#dropdown {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    position: absolute;
+}
+
+#us {
+    font-size: 15px;
+}
+
+.dropdown-menu ul,
+.dropdown-menu li {
     margin: 0;
     padding: 0;
 }
@@ -28,17 +54,18 @@
 }
 
 .dropdown-menu a {
-    background-color: aquamarine;
+    background-color: #90E0EF;
     color: white;
     display: block;
     padding: 15px 55px;
     text-align: center;
     text-decoration: none;
     transition: all 0.25s ease;
+    font-size: 20px;
 }
 
-.dropdown-menu li:hover a{
-    background: blue;
+.dropdown-menu li:hover a {
+    background: #48CAE4;
 }
 
 #submenu {
@@ -62,27 +89,108 @@ li:hover ul#submenu {
 }
 
 #submenu a:hover {
-    background: #df4b05;
+    background: #03045E;
 }
 
 #submenu a {
-    background-color: #34495e;
-}
-
-h1 {
-    display: flex;
-    justify-content: center;
+    background-color: #023E8A;
 }
 
 #sumario {
     border: 1px solid red;
     width: 15rem;
     height: calc(100vh - 8rem);
-    margin-top: 8rem;
+    padding: 1rem;
 }
 
 .conteudo {
     border: 1px solid red;
-    width: calc(100vw - 16rem);
-    margin-left: 16rem;
+    padding: 1rem;
+}
+
+.conteudo-container {
+    display: flex;
+    gap: 2rem;
+
+    margin-top: 8rem;
+}
+
+#formulario {
+    padding: 2rem;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario label {
+    font-size: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 8px;
+    border: solid black;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.icone-prefixo {
+    width: 50%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#formulario form input {
+    padding: 4px 30px;
+}
+
+#formulario form input.icone-prefixo {
+    background-size: 20px;
+    background-position: 4px;
+}
+
+#name {
+    background: url("../imagens/perfil.png") no-repeat left;
+}
+
+#email {
+    background: url("../imagens/o-email.png") no-repeat left;
+}
+
+#senha {
+    background: url("../imagens/cadeado-trancado.png") no-repeat left;
+}
+
+#titulo-cadastro {
+    font-size: 30px;
+}
+
+.radio span {
+    font-size: 22px;;
+}
+
+.input-radio {
+    width: 20px;
+    height: 25px;
+    vertical-align: middle;
+    
+}
+
+.span-input-radio {
+    font-size: 20px;
 }
