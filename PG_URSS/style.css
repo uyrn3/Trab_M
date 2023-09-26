@@ -1,0 +1,289 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+#cabecalho {
+    width: 100vw;
+    height: 8rem;
+    background: #d90209;
+    position: fixed;
+    top: 0;
+    display: flex;
+}
+
+h1 {
+    margin: 0 auto;
+    align-self: center;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.listas {
+    font-size: 20px;
+}
+
+#dropdown {
+    margin-left: 1rem;
+    margin-top: 2rem;
+    position: absolute;
+}
+
+#us {
+    font-size: 15px;
+}
+
+.dropdown-menu ul,
+.dropdown-menu li {
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-menu ul {
+    background: gray;
+    list-style: none;
+    width: 100%;
+}
+
+.dropdown-menu li {
+    float: left;
+    position: relative;
+    width: auto;
+}
+
+.dropdown-menu a {
+    background-color: #D90209;
+    color: white;
+    display: block;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.25s ease;
+    font-size: 20px;
+}
+
+.dropdown-menu li:hover a {
+    background: #D10007;
+}
+
+#submenu {
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 35px;
+    visibility: hidden;
+    z-index: 1;
+}
+
+li:hover ul#submenu {
+    opacity: 1;
+    top: 50px;
+    visibility: visible;
+}
+
+#submenu li {
+    float: none;
+    width: 100%;
+}
+
+#submenu a:hover {
+    background: #9E0006;
+}
+
+#submenu a {
+    background-color: #023E8A;
+}
+
+#sumario {
+    border: 1px solid gray;
+    width: 15rem;
+    height: calc(100vh - 8rem);
+    padding: 1rem;
+}
+
+.imagens {
+    width: 35rem;
+    height: 18rem;
+}
+
+#bandeira-otan {
+    margin-top: 1rem;
+}
+
+.i_imagens {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+}
+
+.conteudo {
+    padding: 1rem;
+}
+
+.conteudo-container {
+    display: flex;
+    gap: 1rem;
+
+    margin-top: 8rem;
+}
+
+#formulario {
+    padding: 2rem;
+}
+
+.usuario {
+    display: flex;
+    flex-direction: column;
+}
+
+.usuario label {
+    font-size: 20px;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.senha {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 8px;
+    border: solid black;
+    font-size: 20px;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+
+.icone-prefixo {
+    width: 50%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#formulario form input {
+    padding: 4px 30px;
+}
+
+#formulario form input.icone-prefixo {
+    background-size: 20px;
+    background-position: 4px;
+}
+
+#name {
+    background: url("../imagens/perfil.png") no-repeat left;
+}
+
+#email {
+    background: url("../imagens/o-email.png") no-repeat left;
+}
+
+#senha {
+    background: url("../imagens/cadeado-trancado.png") no-repeat left;
+}
+
+#titulo-cadastro {
+    font-size: 30px;
+}
+
+#novidades {
+    font-size: 22px;
+}
+
+.input_radio_botao {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.input-radio {
+    width: 20px;
+    height: 25px;
+    vertical-align: middle;
+    
+}
+
+.span-input-radio {
+    font-size: 20px;
+}
+
+#escolha_checkbox {
+    width: 2rem;
+    height: 1rem;
+    vertical-align: middle;
+}
+
+#label_checkbox {
+    font-size: 20px;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    width: 12rem;
+    height: 2rem;
+    display: block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: black;
+    margin: 0.15px;
+    padding: 10px 35px;
+    position: relative;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.btn:before {
+        content: " ";
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        background-color: #90E0EF;
+        z-index: -1;
+
+        transition: .7s ease;
+}
+
+#text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.btn1:before {
+        width: 0;
+        height: 100;
+}
+
+.btn1:hover::before {
+    width: 100%;
+}
