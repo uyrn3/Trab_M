@@ -18,31 +18,36 @@
                     <li><a href="#">Uniáo Soviética ↓</a>
                         <ul id="submenu">
                             <li><a href="../PG_I/index.html">Resumo</a></li>
-                            <li id="us"><a href="../PG_URSS/index.html">Estados Unidos</a></li>
+                            <li id="us"><a href="../PG_US/index.html">Estados Unidos</a></li>
                         </ul>
                     </li>
                 </ul>
             </nav>
         </div>
         <h1>Guerra Fria</h1>
+        <div class="login">
+            <nav>
+                <a href="#" id="a-login">Login</a>
+            </nav>
+        </div>
     </div>
 
     <div class="conteudo-container">
 
         <div id="sumario">
-            <span>Sumário</span>
+            <span id="sumario-texto">Sumário</span>
             <ul>
-                <li><a href="#primeira-section">Papel dos estados unidos</a></li>
-                <li><a href="#segunda-section">O que é capitalismo</a></li>
-                <li><a href="#terceira-section">Principais planos</a></li>
-                <li><a href="#quarta-section">Lideres americanos</a></li>
-                <li><a href="#quinta-section">Acensão Americana</a></li>
+                <li><a href="#primeira-section">O que é o socialismo</a></li>
+                <li><a href="#segunda-section">Papel da união soviética</a></li>
+                <li><a href="#terceira-section">Principais pontos</a></li>
+                <li><a href="#quarta-section">Lideres</a></li>
+                <li><a href="#quinta-section">Queda da USSR</a></li>
             </ul>
         </div>
 
         <div class="conteudo-sections">
             <section id="primeira-section" class="conteudo">
-                <h1>União Soviética</h1>
+                <h2>União Soviética</h2>
                 <img src="../imagens/bandeira_uniao-sovietica.png" alt="bandeira da uniao sovietica" class="imagens">
                 <i class="i_imagens">bandeira da USSR</i>
                 <h2>Oque é o socialismo?</h2>
@@ -51,6 +56,8 @@
                     riqueza e do poder entre os membros da sociedade. Ele contrasta com o capitalismo, que se baseia na
                     propriedade privada dos meios de produção e na busca do lucro individual.</p>
             </section>
+
+            <hr>
 
             <section id="segunda-section" class="conteudo">
                 <h2>Papel da União Soviética</h2>
@@ -62,6 +69,8 @@
                     o
                     mundo como parte de sua estratégia global.</p>
             </section>
+
+            <hr>
 
             <section id="terceira-section" class="conteudo">
                 <h2>Principais pontos:</h2>
@@ -83,9 +92,9 @@
                         a
                         enviar o primeiro ser humano ao espaço, Yuri Gagarin.</li>
                 </ul>
-                <img src="../imagens/astronauta.jpg" alt="imagem de astronauta" id="imagem_astronauta" class="imagens">
+                <img src="../imagens/yuri.jpg" alt="imagem de astronauta" id="imagem-yuri" class="imagens">
                 <i class="i_imagens">Yuri Gargagin, o primeiro homem no espaço em 1961</i>
-
+                <hr>
             </section>
 
             <section id="quarta-section" class="conteudo">
@@ -145,6 +154,8 @@
                 </table>
             </section>
 
+            <hr>
+
             <section id="quinta-section" class="conteudo">
                 <h2>Queda da URSS</h2>
 
@@ -199,30 +210,51 @@
     <hr>
 
     <div id="formulario">
-        <h2>Faca seul cadastro!</h2>
+        <h2 id="titulo-cadastro">Faça seu cadastro!</h2>
         <form action="">
-            <label for="name">Nome de usuario:</label>
-            <input type="text" id="name" placeholder="Nome:">
-            <div id="email">
-                <label for="email">Informe o email</label>
-                <input type="email" id="email" placeholder="email">
+            <div class="usuario">
+                <label for="name">Nome de usuario:</label>
+                <input class="icone-prefixo" id="name" type="text" placeholder="Nome:">
             </div>
-            <div id="senha">
-                <label for="senha">Crie uma senha</label>
-                <input type="password" id="senha" placeholder="Senha:">
-            </div>
-            <div id="radio">
-                <span>Deseja receber novidades por email?</span>
-                <input type="radio" name="sim" id="sim" value="escolha">
-                <label for="sim">Sim</label>
 
-                <input type="radio" name="nao" id="nao" value="escolha">
-                <label for="nao">Nao</label>
+            <div class="email">
+                <label for="email">Informe o email</label>
+                <input class="icone-prefixo" type="email" id="email" placeholder="Email:">
+            </div>
+
+            <div class="senha">
+                <label for="senha">Crie uma senha</label>
+                <input class="icone-prefixo" type="password" id="senha" placeholder="Senha:">
+            </div>
+
+            <div class="radio">
+                <span id="novidades">Selecione sua faixa etária</span>
+
+                <div class="input_radio_botao">
+                    <div>
+                        <input type="radio" class="input-radio" name="escolha" id="sim" value="sim">
+                        <label class="span-input-radio" for="sim">+18</label>
+                    </div>
+                    <div>
+                        <input type="radio" class="input-radio" name="escolha" id="nao" value="nao">
+                        <label class="span-input-radio" for="nao">-18</label>
+                    </div>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox_escolha" id="escolha_checkbox">
+                    <label for="escolha_checkbox" id="label_checkbox">Desejo receber novidades via email!</label>
+                </div>
+            </div>
+            <div class="login">
+                <nav>
+                    <a href="../PG_LOGIN/index.html">Já tem cadastro? Faça seu login clicando aqui!</a>
+                </nav>
             </div>
             <div class="botao">
                 <a href="#" class="btn btn1" id="text">Cadastrar</a>
             </div>
         </form>
+    </div>
     </div>
 </body>
 

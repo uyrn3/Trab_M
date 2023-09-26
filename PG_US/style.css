@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 * {
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 html {
@@ -24,6 +26,7 @@ body {
 h1 {
     margin: 0 auto;
     align-self: center;
+    color: #fff;
 }
 
 h2 {
@@ -67,7 +70,7 @@ p {
 }
 
 .dropdown-menu a {
-    background-color: #90E0EF;
+    background-color: #88A8EA;
     color: white;
     display: block;
     padding: 15px 55px;
@@ -78,7 +81,7 @@ p {
 }
 
 .dropdown-menu li:hover a {
-    background: #48CAE4;
+    background: #195DE6;
 }
 
 #submenu {
@@ -102,11 +105,11 @@ li:hover ul#submenu {
 }
 
 #submenu a:hover {
-    background: #03045E;
+    background: #023E8A;
 }
 
 #submenu a {
-    background-color: #023E8A;
+    background-color: #1347B3;
 }
 
 #sumario {
@@ -114,6 +117,10 @@ li:hover ul#submenu {
     width: 15rem;
     height: calc(100vh - 8rem);
     padding: 1rem;
+}
+
+#sumario-texto {
+    font-size: 20px;
 }
 
 .imagens {
