@@ -17,7 +17,7 @@ body {
 #cabecalho {
     width: 100vw;
     height: 8rem;
-    background: #88A8EA;
+    background: #0D1B66;
     position: fixed;
     top: 0;
     display: flex;
@@ -70,7 +70,7 @@ p {
 }
 
 .dropdown-menu a {
-    background-color: #88A8EA;
+    background-color: #0D1B66;
     color: white;
     display: block;
     padding: 15px 55px;
@@ -151,6 +151,13 @@ li:hover ul#submenu {
 
 #formulario {
     padding: 2rem;
+}
+
+.login {
+    margin-top: 5px;
+    margin-bottom: 1rem;
+    font-size: 16px;
+    color: skyblue;
 }
 
 .usuario {
@@ -264,21 +271,21 @@ input::placeholder {
     border: 2px solid black;
     border-radius: 8px;
     overflow: hidden;
+}
     
 
-    &:before {
+.btn:before {
         content: " ";
         position: absolute;
         top: 0%;
         left: 0%;
         width: 100%;
         height: 100%;
-        background-color: #90E0EF;
+        background-color: #0D1B66;
         z-index: -1;
 
         transition: .7s ease;
 
-    }
 }
 
 #text {
